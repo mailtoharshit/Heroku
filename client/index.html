@@ -1,23 +1,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head >
-    <title></title>
-    <style type="text/css">
-        body
-        {
-            margin: 0;
-            overflow: auto;
-        }
-        #iframe1
-        {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-        }E
-    </style>
-</head>
-<body>
-    <iframe id="iframe1" src="http://trialforce-developer-edition.na17.force.com/" frameborder="0"></iframe>
-EE</body>
+<head ></head>
+    <body>
+    <SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "icloudcode") {
+alert('You Got it Right!');
+window.open('protectpage.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+</function></body>
 </html>
