@@ -1,0 +1,11 @@
+{
+  "name": "ForceExplorer",
+  "description": "Force.com Mini Explorer",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.4.4",
+    "request": "^2.36.0"
+  }
+}
